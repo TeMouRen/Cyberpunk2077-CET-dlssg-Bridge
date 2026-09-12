@@ -1,0 +1,30 @@
+# 第三方本地输入，不提交
+/input/*
+!/input/README.md
+
+# 本地生成产物，不提交
+/dist/*
+!/dist/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDA 与临时文件
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.tmp
+*.log
+
+# 编辑器与系统文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
