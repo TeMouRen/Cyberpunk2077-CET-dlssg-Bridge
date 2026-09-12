@@ -124,23 +124,7 @@ NVSDK_NGX_GetAPIVersion()=19
 
 不要把测试用的 `tools\merge-test-global.ini` 复制到游戏目录，它会关闭 CET 插件加载。
 
-## 更新 CET 或 DLSSG
 
-CET 更新后，用新版 CET 的 `version.dll` 替换 `input\cet-ual-version.dll`。
-
-DLSSG 更新后，用新版 DLL 和 INI 替换：
-
-- `input\dlssg-sm86-version.dll`
-- `input\dlssg_sm86.ini`
-
-再次运行 `build.ps1`。只有烟雾测试通过，并且进入游戏确认 CET、RED4ext 和帧生成均正常后，才能认为新组合兼容。
-
-以下变化可能需要重新分析：
-
-- CET 不再使用当前 Ultimate ASI Loader 或不再导出 `ResolveAddress`
-- 加载器不再自动加载 `versionHooked.dll`
-- DLSSG 要求固定代理文件名或改变拦截机制
-- 两个项目新增互相冲突的 Hook
 
 ## 卸载与回滚
 
